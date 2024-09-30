@@ -27,6 +27,8 @@ public void getPaypalInvoiceTemplateList()
             .param("grant_type","client_credentials")
             .when()
             .post(PAYPAL_OAUTH_URL).jsonPath().getString("access_token");
+
+   System.out.println("*****************The access token is:************"+accessToken);
    int statuscode =  RestAssured.given()
             .header("Authorization","Bearer "+accessToken)
             .header("Content_Type","application/json")

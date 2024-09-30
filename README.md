@@ -1,3 +1,3 @@
 To Run OAuth2 Test \
-Navigate to src/test/aaa \
+Navigate to src/test/java \
 Run .java \
